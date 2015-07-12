@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>SHAI WILSON | PORTFOLIO</title>
-  <meta name="viewport" content="width=device-width">
-     <title><%= yield(:title) %> | Portfolio </title>
-    <%= stylesheet_link_tag 'application', media: 'all',
-                                           'data-turbolinks-track' => true %>
+    <meta name="description" content="Shai Wilson likes programming and designing.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="author" content="Shai Wilson">
+    <meta name="keyword" content="Interactive, Design, Interactive Design, Web Development, USF, Web Design, UI, User Interface, Shai, Wilson, Shai Wilson,">
+    <title><%= full_title(yield(:title)) %></title>
+    <%= stylesheet_link_tag    'application', media: 'all',
+                                              'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
-    <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
-      </script>
-    <![endif]-->
   </head>
   <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to "sample app", '#', id: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home",   '#' %></li>
-            <li><%= link_to "work",   '#' %></li>
-            <li><%= link_to "Blog", '#' %></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div class="container">
-      <%= yield %>
-    </div>
+      <nav class="menu">
+        <ul class="navigation">
+          <li class="menuItem"><%= link_to "Home",    root_path %></li>
+          <li class="menuItem"><%= link_to "Work",    work_path %></li>
+          <li class="menuItem"><%= link_to "About",    about_path %></li>
+          <li class="menuItem"><%= link_to "Resume",    resume_path %></li>
+          <li class="menuItem"><%= link_to "Blog", blogs_path %></li>
+        </ul>
+      </nav>
+  <div class="topleft">Shai Wilson</div>
+  <div class="topright"><a href="https://github.com/shaiwilson"  target="_blank">github</a></div>
+  <div class="bottomleft">It is, <div id="time">time</div> where you are</div>
+  <div class="bottomright">It is, <div id="time">time</div> where I am</div>
+
+
+    <%= yield %>
+
+
   </body>
 </html>

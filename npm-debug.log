@@ -1,0 +1,192 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'js2coffee' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.1
+4 silly cache add args [ 'js2coffee', null ]
+5 verbose cache add spec js2coffee
+6 silly cache add parsed spec { raw: 'js2coffee',
+6 silly cache add   scope: null,
+6 silly cache add   name: 'js2coffee',
+6 silly cache add   rawSpec: '',
+6 silly cache add   spec: '*',
+6 silly cache add   type: 'range' }
+7 verbose addNamed js2coffee@*
+8 silly addNamed semver.valid null
+9 silly addNamed semver.validRange *
+10 silly addNameRange { name: 'js2coffee', range: '*', hasData: false }
+11 silly mapToRegistry name js2coffee
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/js2coffee
+15 verbose addNameRange registry:https://registry.npmjs.org/js2coffee not in flight; fetching
+16 verbose request uri https://registry.npmjs.org/js2coffee
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 1:02:27 AM
+19 verbose request id c5a0493063dd174b
+20 http request GET https://registry.npmjs.org/js2coffee
+21 http 200 https://registry.npmjs.org/js2coffee
+22 silly get cb [ 200,
+22 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+22 silly get     etag: '"14PV8NXWKD2I35NKBOSGCM7A8"',
+22 silly get     'content-type': 'application/json',
+22 silly get     'cache-control': 'max-age=60',
+22 silly get     'content-length': '55527',
+22 silly get     'accept-ranges': 'bytes',
+22 silly get     date: 'Sun, 12 Jul 2015 16:02:27 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     age: '0',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-nrt6123-NRT',
+22 silly get     'x-cache': 'MISS',
+22 silly get     'x-cache-hits': '0',
+22 silly get     'x-timer': 'S1436716947.560239,VS0,VE333',
+22 silly get     vary: 'Accept' } ]
+23 verbose get saving js2coffee to /Users/chachashai/.npm/registry.npmjs.org/js2coffee/.cache.json
+24 silly addNameRange number 2 { name: 'js2coffee', range: '*', hasData: true }
+25 silly addNameRange versions [ 'js2coffee',
+25 silly addNameRange   [ '0.0.1',
+25 silly addNameRange     '0.0.2',
+25 silly addNameRange     '0.0.3',
+25 silly addNameRange     '0.0.4',
+25 silly addNameRange     '0.0.5',
+25 silly addNameRange     '0.1.0',
+25 silly addNameRange     '0.1.1',
+25 silly addNameRange     '0.1.2',
+25 silly addNameRange     '0.1.3',
+25 silly addNameRange     '0.1.4',
+25 silly addNameRange     '0.2.0',
+25 silly addNameRange     '0.2.1',
+25 silly addNameRange     '0.2.3',
+25 silly addNameRange     '0.2.4',
+25 silly addNameRange     '0.2.5',
+25 silly addNameRange     '0.2.6',
+25 silly addNameRange     '0.2.7',
+25 silly addNameRange     '0.3.0',
+25 silly addNameRange     '0.3.1',
+25 silly addNameRange     '0.3.2',
+25 silly addNameRange     '0.3.3',
+25 silly addNameRange     '0.3.4',
+25 silly addNameRange     '0.3.5',
+25 silly addNameRange     '2.0.0',
+25 silly addNameRange     '2.0.1',
+25 silly addNameRange     '2.0.2',
+25 silly addNameRange     '2.0.3',
+25 silly addNameRange     '2.0.4',
+25 silly addNameRange     '2.1.0' ] ]
+26 verbose addNamed js2coffee@2.1.0
+27 silly addNamed semver.valid 2.1.0
+28 silly addNamed semver.validRange 2.1.0
+29 silly mapToRegistry name js2coffee
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/js2coffee
+33 verbose addRemoteTarball https://registry.npmjs.org/js2coffee/-/js2coffee-2.1.0.tgz not in flight; adding
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/js2coffee/-/js2coffee-2.1.0.tgz',
+34 verbose addRemoteTarball   'bf804e46fc576d8e73478aee0cecaaac187a99d9' ]
+35 info retry fetch attempt 1 at 1:02:27 AM
+36 info attempt registry request try #1 at 1:02:27 AM
+37 http fetch GET https://registry.npmjs.org/js2coffee/-/js2coffee-2.1.0.tgz
+38 http fetch 200 https://registry.npmjs.org/js2coffee/-/js2coffee-2.1.0.tgz
+39 silly fetchAndShaCheck shasum bf804e46fc576d8e73478aee0cecaaac187a99d9
+40 verbose addTmpTarball /var/folders/4z/j2t_j86n04q3htp4m36bv6qr0000gp/T/npm-10485-9afba3ca/registry.npmjs.org/js2coffee/-/js2coffee-2.1.0.tgz not in flight; adding
+41 verbose addTmpTarball already have metadata; skipping unpack for js2coffee@2.1.0
+42 silly cache afterAdd js2coffee@2.1.0
+43 verbose afterAdd /Users/chachashai/.npm/js2coffee/2.1.0/package/package.json not in flight; writing
+44 verbose afterAdd /Users/chachashai/.npm/js2coffee/2.1.0/package/package.json written
+45 silly install resolved [ { name: 'js2coffee',
+45 silly install resolved     version: '2.1.0',
+45 silly install resolved     description: 'JavaScript to CoffeeScript compiler',
+45 silly install resolved     homepage: 'http://js2.coffee',
+45 silly install resolved     main: 'dist/js2coffee.js',
+45 silly install resolved     keywords: [ 'javascript', 'coffeescript', 'language', 'compiler' ],
+45 silly install resolved     scripts:
+45 silly install resolved      { test: 'mocha',
+45 silly install resolved        autotest: 'mocha -R min -b --watch',
+45 silly install resolved        prepublish: 'mocha >/dev/null && make -B dist' },
+45 silly install resolved     author: { name: 'Rico Sta. Cruz', email: 'hi@ricostacruz.com' },
+45 silly install resolved     license: 'MIT',
+45 silly install resolved     bugs: { url: 'https://github.com/js2coffee/js2coffee/issues' },
+45 silly install resolved     repository:
+45 silly install resolved      { type: 'git',
+45 silly install resolved        url: 'git+https://github.com/js2coffee/js2coffee.git' },
+45 silly install resolved     browser: 'js2coffee.coffee',
+45 silly install resolved     bin: { js2coffee: './bin/js2coffee' },
+45 silly install resolved     dependencies:
+45 silly install resolved      { escodegen: '^1.6.0',
+45 silly install resolved        esprima: '^2.4.0',
+45 silly install resolved        estraverse: '^1.9.1',
+45 silly install resolved        minimist: '^1.1.0',
+45 silly install resolved        'read-input': '^0.2.0',
+45 silly install resolved        'source-map': '^0.1.38' },
+45 silly install resolved     devDependencies:
+45 silly install resolved      { browserify: '^5.10.1',
+45 silly install resolved        chai: '^1.9.1',
+45 silly install resolved        'coffee-script': '^1.8.0',
+45 silly install resolved        coffeeify: '^1.0.0',
+45 silly install resolved        coffeelint: '^1.6.0',
+45 silly install resolved        glob: '^4.0.5',
+45 silly install resolved        'js-yaml': '^3.2.1',
+45 silly install resolved        mocha: '^2.1.0',
+45 silly install resolved        'mocha-clean': '^0.4.0',
+45 silly install resolved        'uglify-js': '^2.4.16',
+45 silly install resolved        underscore: '^1.7.0' },
+45 silly install resolved     gitHead: '4e38ac5444b846d04a5c9d77e326310712f7191d',
+45 silly install resolved     _id: 'js2coffee@2.1.0',
+45 silly install resolved     _shasum: 'bf804e46fc576d8e73478aee0cecaaac187a99d9',
+45 silly install resolved     _from: 'js2coffee@*',
+45 silly install resolved     _npmVersion: '2.11.3',
+45 silly install resolved     _nodeVersion: '2.3.1',
+45 silly install resolved     _npmUser: { name: 'rstacruz', email: 'rico@ricostacruz.com' },
+45 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+45 silly install resolved     dist:
+45 silly install resolved      { shasum: 'bf804e46fc576d8e73478aee0cecaaac187a99d9',
+45 silly install resolved        tarball: 'http://registry.npmjs.org/js2coffee/-/js2coffee-2.1.0.tgz' },
+45 silly install resolved     directories: {},
+45 silly install resolved     _resolved: 'https://registry.npmjs.org/js2coffee/-/js2coffee-2.1.0.tgz' } ]
+46 info install js2coffee@2.1.0 into /usr/local/lib
+47 info installOne js2coffee@2.1.0
+48 verbose installOne of js2coffee to /usr/local/lib not in flight; installing
+49 verbose lock using /Users/chachashai/.npm/_locks/js2coffee-048ee8fa4d70b52f.lock for /usr/local/lib/node_modules/js2coffee
+50 silly install write writing js2coffee 2.1.0 to /usr/local/lib/node_modules/js2coffee
+51 silly cache addNamed cb js2coffee@2.1.0
+52 verbose unbuild lib/node_modules/js2coffee
+53 verbose gentlyRm vacuuming /usr/local/lib/node_modules/js2coffee
+54 verbose tar unpack /Users/chachashai/.npm/js2coffee/2.1.0/package.tgz
+55 verbose tar unpacking to /usr/local/lib/node_modules/js2coffee
+56 verbose gentlyRm vacuuming /usr/local/lib/node_modules/js2coffee
+57 silly gunzTarPerm modes [ '755', '644' ]
+58 error tar.unpack untar error /Users/chachashai/.npm/js2coffee/2.1.0/package.tgz
+59 verbose unlock done using /Users/chachashai/.npm/_locks/js2coffee-048ee8fa4d70b52f.lock for /usr/local/lib/node_modules/js2coffee
+60 verbose fstream_path /usr/local/lib/node_modules/js2coffee
+61 verbose fstream_type Directory
+62 verbose fstream_class DirWriter
+63 verbose stack Error: EACCES, mkdir '/usr/local/lib/node_modules/js2coffee'
+63 verbose stack     at Error (native)
+64 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+64 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+64 verbose fstream_stack FSReqWrap.oncomplete (fs.js:99:15)
+65 verbose cwd /Users/chachashai/RailsProjects/portfolio
+66 error Darwin 14.3.0
+67 error argv "node" "/usr/local/bin/npm" "install" "-g" "js2coffee"
+68 error node v0.12.1
+69 error npm  v2.5.1
+70 error path /usr/local/lib/node_modules/js2coffee
+71 error code EACCES
+72 error errno -13
+73 error Error: EACCES, mkdir '/usr/local/lib/node_modules/js2coffee'
+73 error     at Error (native)
+73 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/js2coffee']
+73 error   errno: -13,
+73 error   code: 'EACCES',
+73 error   path: '/usr/local/lib/node_modules/js2coffee',
+73 error   fstream_type: 'Directory',
+73 error   fstream_path: '/usr/local/lib/node_modules/js2coffee',
+73 error   fstream_class: 'DirWriter',
+73 error   fstream_stack:
+73 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+73 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+73 error      'FSReqWrap.oncomplete (fs.js:99:15)' ] }
+74 error Please try running this command again as root/Administrator.
+75 verbose exit [ -13, true ]
+76 verbose unbuild lib/node_modules/js2coffee
+77 verbose gentlyRm vacuuming /usr/local/lib/node_modules/js2coffee

@@ -1,0 +1,95 @@
+
+.resume {
+  position:relative;
+}
+
+.textarea4 {
+	width: 35vw;
+	height: 40vw;
+	position: absolute;
+	top: 12vw;
+	left: 14vw;
+	font-size: 1.5vw;
+	line-height: 2.2vw;
+	color: black;
+	z-index: 16;
+}
+
+.textarea2 {
+	width: 35vw;
+	height: 40vw;
+	position: absolute;
+	top: 12vw;
+	left: 60vw;
+	font-size: 1.5vw;
+	line-height: 2.2vw;
+	color: black;
+	z-index: 16;
+}
+
+.textarea3 {
+	width: 35vw;
+	height: 30vw;
+	position: absolute;
+	top: 12vw;
+	left: 51vw;
+	font-size: 1.5vw;
+	line-height: 2.2vw;
+	color: black;
+	z-index: 15;
+	text-align: right;
+}
+
+.container1 {
+   	overflow-y: auto;
+   	overflow-x: hidden;
+   	position: absolute;
+   	top: 0px;
+   	left: 100px;
+   	height: 190vh;
+   	width: 100%;
+   	padding: 32px;	
+}
+
+.container2 {
+   	overflow-y: auto;
+   	overflow-x: hidden;
+   	position: absolute;
+   	top: 0px;
+   	left: 100px;
+   	height: 190vh;
+   	width: 100%;	
+}
+
+.textarea5 {
+	width: 35vw;
+	height: 30vw;
+	position: absolute;
+	top: 12vw;
+	left: 5vw;
+	font-size: 1.5vw;
+	line-height: 2.2vw;
+	color: black;
+	z-index: 15;
+	text-align: right;
+}
+
+.subcaps {
+	font-size: 1vw;
+	line-height: 2.2vw;
+	color: #6D00FC;
+	float: left;
+	margin-right: 2vw;
+	padding-top: .2vw;
+	text-align: right;
+}
+.subcaps2 {
+	font-size: 1vw;
+	line-height: 2.2vw;
+	color: black;
+	float: left;
+	width: 100%;
+	margin-right: 2vw;
+	padding-top: .2vw;
+	text-align: left;
+}
