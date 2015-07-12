@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   get 'static_pages/home'
   get 'static_pages/work'
+  get 'static_pages/about'
 
   resources :blogs
 
