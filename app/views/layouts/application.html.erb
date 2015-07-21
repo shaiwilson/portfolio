@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="description" content="Shai Wilson likes programming and designing.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="author" content="Shai Wilson">
-    <meta name="keyword" content="Interactive, Design, Interactive Design, Web Development, USF, Web Design, UI, User Interface, Shai, Wilson, Shai Wilson,">
-    <title class="title"><%= full_title(yield(:title)) %></title>
-    <%= stylesheet_link_tag    'application', media: 'all',
-                                              'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
-  </head>
-  <body>
+<head>
+  <meta name="description" content="Shai Wilson likes programming and design.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="author" content="Shai Wilson">
+  <meta name="keyword" content="Interactive, Software, Engineering, Design, Interactive Design, Web Development, USF, Web Design, UI, User Interface, Shai, Wilson, Shai Wilson, Shailee, Shailee Wilson,">
+  <title class="title">Shai Wilson Portfolio</title>
+  <%= stylesheet_link_tag    'application', media: 'all',
+  'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div class="container">
+    <div class="leftbar">
+    </div>
+
+    <div class="innerleft">
+
+      <div class="title"><%= full_title(yield(:title)) %></div>
+      <hr>
+
+    </div>
+    <div class="leftscroll">
+
+      <p>shay &mdash; this is where I will add the phonetic spelling of my name and my current location</p>
+
+      <br>
       <nav class="menu">
         <ul class="navigation">
           <li class="menuItem"><%= link_to "Home",    root_path %></li>
@@ -21,14 +37,25 @@
           <li class="menuItem"><%= link_to "Blog", blogs_path %></li>
         </ul>
       </nav>
-  <div class="topleft">Shai Wilson</div>
-  <div class="topright"><a href="https://github.com/shaiwilson"  target="_blank">github</a></div>
-  <div class="bottomleft">It is, <div id="time">time</div> where you are</div>
-  <div class="bottomright">It is, <div id="time">time</div> where I am</div>
+
+      <br><br><br><br><br>
+
+      <div class="innerbottom">
+        <hr>
+        <a href="#">how I designed this site</a>
+      </div>
+    </div>
+    <div class="rightbar">
+      <div class="textright">
+      </div>
+      <div class="topleft">Shai Wilson</div>
+      <div class="topright"><a href="https://github.com/shaiwilson"  target="_blank">github</a></div>
+     <!-- <div class="bottomleft">It is, <div id="time">time</div> where you are</div>
+      <div class="bottomright">It is, <div id="time">time</div> where I am</div> -->
 
 
-    <%= yield %>
+      <%= yield %>
 
-
+    </div> <!-- close container div -->
   </body>
-</html>
+  </html>

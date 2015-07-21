@@ -1,3 +1,4 @@
+<div id="coming-soon">
 <%= form_for(@blog, :remote => true) do |f| %>
   <% if @blog.errors.any? %>
     <div id="error_explanation">
@@ -27,4 +28,5 @@
     <%= f.submit %>
   </div>
 <% end %>
+</div>
 

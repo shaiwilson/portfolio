@@ -11,7 +11,8 @@ CONTACT AT SJWILSON2@USFCA.EDU
 
 /*_________*_*_*_*_*_*_*_*_*_____MIXINS, VARIABLES, ETC__*_*_*_*_*_*/
 
-$neon-blue: #00FFC1;
+$neon-blue: #2B00F7;
+
 
 /*_________*_*_*_*_*_*_*_*_*_____UNIVERSAL__*_*_*_*_*_*/
 
@@ -26,30 +27,122 @@ body {
   background-color: #FFFFFF;
 }
 
-/*_________*_*_*_*_*_*_*_*_*_____NAV__*_*_*_*_*_*/
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  line-height: 25px;
+}
+
+
+/*_________*_*_*_*_*_*_*_*_*_____SIDE NAV__*_*_*_*_*_*/
 
 
 .navigation {
   position: fixed;
   list-style:none;
   padding: 50px;
-  top: 20%;
-  font-size: 1em;
+  top: 35%;
+  font-size: 1.5em;
   line-height: 1.8em;
+} 
+
+.leftbar {
+  position: fixed;
+  width: 330px;
+  background-color: #2B00F7;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  border-right: 4px solid #000;
+  z-index: 2;
 }
 
+.innerleft {
+  position: fixed;
+  height: 115px;
+  width: 265px;
+  z-index: 4;
+  top: 0px;
+  left: 0px;
+  padding: 30px;
 
-/*_________*_*_*_*_*_*_*_*_*_____SOCIAL MEDIA LINKS__*_*_*_*_*_*/
+}
+
+.innerbottom {
+  position: fixed;
+  height: 70px;
+  width: 265px;
+  z-index: 4;
+  bottom: 10px;
+  left: 0px;
+  padding: 5px 30px 30px 30px;
+  margin-bottom: 20px; 
+}
+
+.leftscroll {
+  position: fixed;
+  width: 265px;
+  left: 30px;
+  padding: 0px;
+      height: 400px; 
+      top: 200px;
+  z-index: 3;
+  font-size: 17px;
+  margin-bottom: 50px; 
+}
+
+.rightbar {
+  position: absolute;
+  left: 335px;
+  top: 0px;
+  padding-left: 50px;
+  padding-top: 40px;
+  padding-right: 30px;
+  padding-bottom: 70px;
+  background-color: #fff; 
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.textright {
+  max-width: 750px;
+  min-width: 300px;
+}
+
+/*_________*_*_*_*_*_*_*_*_*_____HEAD ELEMENTS__*_*_*_*_*_*/
+
+.title {
+  font-size: 50px;
+  line-height: 50px;
+  padding-top: 10px;
+}
+
+.secondtitle {
+  font-size: 30px;
+  line-height: 30px;
+  padding-top: 0px;
+}
+
+hr {
+  background-color: #FFF;
+  height: 2px;
+}
+ 
+
+/*_________*_*_*_*_*_*_*_*_*_____BORDER TEXT__*_*_*_*_*_*/
 
 
 .topleft {
   position:fixed;
-  font-size: 50px;
   z-index: -10;
   color: $neon-blue;
   top: 15px;
   left: 43px;
 }
+
 .topright {
   position:fixed;
   z-index: 10;
@@ -70,7 +163,7 @@ body {
 }
 
 #time {
-  color: #00FFC1;
+  color: black;
 }
 
 /*_________*_*_*_*_*_*_*_*_*_____HOME/INTERACTIVE TEXT__*_*_*_*_*_*/
@@ -136,26 +229,8 @@ a:link, a:visited, a:active {
 }
 
 a:hover {
-  color: $neon-blue;
+  color: white;
 }
-
-#gradient {
-    background: #5BCAFF;
-    background: -webkit-linear-gradient(top, #55EFCB 0%, #5BCAFF 100%);
-    background: -moz-linear-gradient(top, #55EFCB 0%, #5BCAFF 100%);
-    background: -ms-linear-gradient(top, #55EFCB 0%, #5BCAFF 100%);
-    background: linear-gradient(top, #55EFCB 0%, #5BCAFF 100%);
-    width: 100em;
-    height: 100em;
-    position: fixed;
-    z-index: -20;
-}
-
-h1 {
-  font-size: 40px;
-  line-height: 0px;
-}
-
 
 /*_________*_*_*_*_*_*_*_*_*_____COMING SOON__*_*_*_*_*_*/
 
@@ -169,6 +244,8 @@ h1 {
   width: 600px;
   padding: 32px;
 }
+
+
 
 
 
