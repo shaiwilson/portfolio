@@ -86,10 +86,21 @@ table {
     border-spacing: 0
 }
 
-a {
+a:link {
+    text-decoration: none; 
     color: #2B00F7;
-    text-decoration: none;
 }
+
+a:visited {
+    text-decoration: none; 
+    color: #2B00F7;
+}
+
+a:hover {
+    text-decoration: none; 
+    color: #000000;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Inconsolata', monospace;
@@ -307,7 +318,7 @@ img {
 }
 
 [aspect-ratio] {
-    background: #dcd9ed;
+    background: transparent;
     position: relative;
     overflow: hidden;
     height: 1px;

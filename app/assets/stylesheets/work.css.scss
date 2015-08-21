@@ -34,19 +34,6 @@ CONTACT AT SJWILSON2@USFCA.EDU
 		text-align: center;
         }
 
-        #bio{
-        width:80%;
-		overflow-y: auto;
-        margin-left:auto;
-		margin-right:auto;
-		background: rgba(0,0,0,0);
-        text-align: center;
-/*
-		box-sizing:border-box;
-		-moz-box-sizing:border-box;  compensates for padding on regions 
-		text-align: center;
-*/
-        }
 
         .statement{
         font-family:"Lato",sans-serif;
@@ -57,3 +44,20 @@ CONTACT AT SJWILSON2@USFCA.EDU
         padding-right: 40px;
         }
 
+  #arrows{		
+		width:80%;
+		height:80px;
+		margin-left:500px;
+        margin-bottom: 30px;
+		margin-right:500px;
+        text-align: center;
+		padding-top: 20px;
+		padding-left:0px;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		text-align: center;
+		}
+		
+        .arrow_image {
+		width: 40px;
+        }
