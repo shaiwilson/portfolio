@@ -1,4 +1,4 @@
-# My portfolio! 
+#Professional Portfolio
 
 Hello, world! I'm a developer and designer. I currently attend the University of San Francisco and study an interdisciplinary curriculum in software engineering, computer science, and mobile app development. This portfolio features my professional work from 2012 - 2015.
 
