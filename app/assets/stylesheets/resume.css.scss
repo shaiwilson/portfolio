@@ -23,21 +23,19 @@ $silver: #BDC3C7;
 /*_________*_*_*_*_*_*_*_*_*_____RESUME SPECS_*_*_*_*_*_*/
 
 #code {
-  border-radius: 10px;
+  border-radius: 10px; 
   width:750px;
   margin: 0 auto;
   padding-top:15px;
-  background: $silver;
+  /*background: $silver; */
   text-align: left;
-  font-size:.8em;
 }
 
 #console {
-  width:670px;
+  width:750px;
   padding: 40px;
   margin:0 auto;
   background: $midnight-blue;
-
   a:link, a:visited, a:active {
   color: #ffffff ;
   background-color: $amethyst;

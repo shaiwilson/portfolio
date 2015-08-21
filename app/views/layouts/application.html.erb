@@ -12,50 +12,48 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-  <div class="container">
-    <div class="leftbar">
-    </div>
-
-    <div class="innerleft">
-
-      <div class="title"><%= full_title(yield(:title)) %></div>
-      <hr>
-
-    </div>
-    <div class="leftscroll">
-
-      <p>shay &mdash; this is where I will add the phonetic spelling of my name and my current location</p>
-
-      <br>
-      <nav class="menu">
-        <ul class="navigation">
-          <li class="menuItem"><%= link_to "Home",    root_path %></li>
-          <li class="menuItem"><%= link_to "Work",    work_path %></li>
-          <li class="menuItem"><%= link_to "About",    about_path %></li>
-          <li class="menuItem"><%= link_to "Resume",    resume_path %></li>
-          <li class="menuItem"><%= link_to "Blog", blogs_path %></li>
+  <div id= "top-header">
+    <nav>
+          <ul>
+            <li class="page-item"><span class="linkE"><%= link_to "Home",    root_path %></span></li>
+            <li class="page-item"><span class="linkE"><%= link_to "Work",    work_path %></span></li>
+            <li class="page-item"><span class="linkE"><%= link_to "Resume",    resume_path %></span></li>
+          </ul>
+        </nav> 
+  </div>
+    <header id="global-header" class="row">
+      <div class="nav-container">
+      <nav>
+        <ul>
+          <li>shai wilson</li>
+          <li>san francisco, ca</li>
+          <li><h6>Say hi</h6></li>
+          <li><a class="redirect" href="mailto:sjwilson2@usfca.edu">sjwilson2@usfca.edu</a></li>
         </ul>
       </nav>
-
-      <br><br><br><br><br>
-
-      <div class="innerbottom">
-        <hr>
-        <a href="#">how I designed this site</a>
+      <!--
+        <nav>
+          <ul>
+            <li><span class="linkE"><%= link_to "Home",    root_path %></span></li>
+            <li><span class="linkE"><%= link_to "Work",    work_path %></span></li>
+            <li><span class="linkE"><%= link_to "Resume",    resume_path %></span></li>
+            <li><span class="linkE"><!-- <%= link_to "Blog", blogs_path %> --> Blog coming soon!</span></li> 
+         <!-- </ul>
+        </nav> -->
+        <nav>  
+          <ul class="contact">
+            <li>
+              <span class="linkE"><a href="https://github.com/shaiwilson"  target="_blank">github</a></span><br>
+              <span class="linkE"><a href="https://www.linkedin.com/pub/shai-wilson/90/5b1/1bb"  target="_blank">linkedin</a></span><br>
+             <!-- <span class="linkE"><a href="#"  target="_blank">dribbble</a></span><br> -->
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
-    <div class="rightbar">
-      <div class="textright">
-      </div>
-      <div class="topleft">Shai Wilson</div>
-      <div class="topright"><a href="https://github.com/shaiwilson"  target="_blank">github</a></div>
-     <!-- <div class="bottomleft">It is, <div id="time">time</div> where you are</div>
-      <div class="bottomright">It is, <div id="time">time</div> where I am</div> -->
+    </header>
+    <main>
+  <%= yield %>
 
-
-      <%= yield %>
-
-    </div> <!-- close container div -->
-  </body>
-  </html>
+    </main>
+</body>
+</html>

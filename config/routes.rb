@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'work/justa'
+
+  get 'work/PPIE'
+
+  get 'work/javascript'
+
+  get 'work/OMW'
+
   root             'static_pages#home'
   get 'home'    => 'static_pages#home'
   get 'work'    => 'static_pages#work'

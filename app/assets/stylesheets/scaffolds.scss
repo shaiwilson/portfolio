@@ -1,7 +1,3 @@
-p, ol, ul, td {
-  font-size: 13px;
-  line-height: 18px;
-}
 
 div {
   &.field, &.actions {
@@ -35,9 +31,5 @@ div {
     margin-bottom: 0px;
     background-color: #c00;
     color: #fff;
-  }
-  ul li {
-    font-size: 12px;
-    list-style: square;
   }
 }
