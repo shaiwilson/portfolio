@@ -11,7 +11,7 @@ CONTACT AT SJWILSON2@USFCA.EDU
 
 /*_________*_*_*_*_*_*_*_*_*_____MIXINS, VARIABLES, ETC__*_*_*_*_*_*/
 
-$neon-blue: #2B00F7;
+$neon-purple: #7F2AFF;
 
 /*_________*_*_*_*_*_*_*_*_*_____HEAD ELEMENTS__*_*_*_*_*_*/
 
@@ -19,6 +19,11 @@ $neon-blue: #2B00F7;
   font-size: 50px;
   line-height: 50px;
   padding-top: 10px;
+  color: inherit;
+  transition: color .8s ease-in-out;
+  -moz-transition: color .8s ease-in-out;
+  -webkit-transition: color .8s ease-in-out;
+  -o-transition: color .8s ease-in-out;
 }
 
 .secondtitle {
@@ -37,7 +42,7 @@ $neon-blue: #2B00F7;
     height:60px;
     margin-left:0px;
     margin-top: 0px;
-    background: rgba(255,255,255,.6);
+    /* background: rgba(255,255,255,.6); */
     z-index:300;
     padding-top:10px;
        ul li {
@@ -49,39 +54,6 @@ $neon-blue: #2B00F7;
     padding:0px 40px;
     }
   }
-    
-    
-
-
-/*_________*_*_*_*_*_*_*_*_*_____BORDER TEXT__*_*_*_*_*_*/
-
-
-.topleft {
-  position:fixed;
-  z-index: -10;
-  color: $neon-blue;
-  top: 15px;
-  left: 43px;
-}
-
-.topright {
-  position:fixed;
-  z-index: 10;
-  top: 15px;
-  right: 43px;
-}
-.bottomleft {
-  position:fixed;
-  z-index: 10;
-  bottom: 15px;
-  left: 43px;
-}
-.bottomright {
-  position:fixed;
-  z-index: 10;
-  bottom: 15px;
-  right: 43px;
-}
 
 
 /*_________*_*_*_*_*_*_*_*_*_____HOME/INTERACTIVE TEXT__*_*_*_*_*_*/
@@ -105,22 +77,24 @@ span.line_break {
 }
 
 span._b {
-  border-color: #000;
-  background: #000;
-  color: #FFFFFF;
-  border: 2px solid #fff;
+  background: $neon-purple;
+  color: #FFF;
+  /* border: 2px solid #fff; */
   padding: 5px 6px 5px;
 }
 
 span._b:hover {
-  border-color: #000;
-  background: #FFFFFF;
   color: #000;
+  background: #fff;
   cursor:pointer;
+  transition: color .8s ease-in-out;
+  -moz-transition: color .8s ease-in-out;
+  -webkit-transition: color .8s ease-in-out;
+  -o-transition: color .8s ease-in-out;
 }
 
 span._b:active {
-  border-color: #FFFFFF;
+  color: #000;
 }
 
 span._node_content {
@@ -131,12 +105,213 @@ span._node_content:active {
   background-color:#000;
 }
 
-/*_________*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+/*_________*_*_*_*_*_*_*_HOME PAGE - FADE IN_*_*_*_*_*_*_*_*/
+
+#openersection {
+  background: #FFF;
+  height: 100vh;
+  width: 100%;
+}
+
+.introcontainer {
+  width: 75%;
+  height: auto; 
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+  left: 12%;
+  max-width: 600px
+
+}
+
+/*_________*_*_*_*_*_*_*_FOOTER_*_*_*_*_*_*_*_*/
 
 
+#footer {
+  width: 100%;
+  height: auto;
+  padding: 35px 0 35px 0;
+}
+
+#footerfloat {
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+  overflow: hidden;
+  color: #000;
+  font-size: 18px;
+}
+
+.footertxtwhite {
+  font-size: 12px;
+}
+
+.footercontainer {
+  width: 100%;
+}
+
+.footercontactfloat {
+  float: left;
+  width: 30%;
+}
+
+.footercontact{
+  color: $neon-purple;
+  font-size: 10px;
+  letter-spacing: 3px;
+  width: 85%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footercontact p{
+  margin-bottom: 20px;
+}
+
+.footercontactfloatmargin {
+  margin-left: 5%;
+}
+
+.footercontact h6{
+  margin-top: 30px;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  color: #666;
+}
+
+#footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#footer a:hover {
+  color: $neon-purple;
+} 
+
+/*_________*_*_*_*_*_*_*_SET ANIMATIONS_*_*_*_*_*_*_*_*/
+
+@-webkit-keyframes fadein{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 
+@-webkit-keyframes fadeinb{
+  0% {
+    
+    opacity: 0;
+  }
 
+  50% {
+    
+    opacity: 0;
+  }
+
+  100% {
+    
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeinb{
+  0% {
+    
+    opacity: 0;
+  }
+
+  50% {
+    
+    opacity: 0;
+  }
+
+  100% {
+    
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeinb{
+  0% {
+    
+    opacity: 0;
+  }
+
+  50% {
+    
+    opacity: 0;
+  }
+
+  100% {
+    
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeind{
+  0% {
+    
+    opacity: 0;
+  }
+
+  100% {
+    
+    opacity: .5;
+  }
+}
+
+@-moz-keyframes fadeind{
+  0% {
+    
+    opacity: 0;
+  }
+
+  100% {
+    
+    opacity: .5;
+  }
+}
+
+
+@-o-keyframes fadeind{
+  0% {
+    
+    opacity: 0;
+  }
+
+  100% {
+    
+    opacity: .5;
+  }
+}
 
 
 

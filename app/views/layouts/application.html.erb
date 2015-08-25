@@ -35,38 +35,31 @@
           </ul>
         </nav> 
   </div>
-    <header id="global-header" class="row">
-      <div class="nav-container">
-      <nav>
-        <ul>
-          <li>Shai Wilson</li>
-          <li>san francisco, ca</li>
-          <li><a class="redirect" href="mailto:sjwilson2@usfca.edu">sjwilson2@usfca.edu</a></li>
-        </ul>
-      </nav>
-      <!--
-        <nav>
-          <ul>
-            <li><span class="linkE"><%= link_to "Home",    root_path %></span></li>
-            <li><span class="linkE"><%= link_to "Work",    work_path %></span></li>
-            <li><span class="linkE"><%= link_to "Resume",    resume_path %></span></li>
-            <li><span class="linkE"><!-- <%= link_to "Blog", blogs_path %> --> Blog coming soon!</span></li> 
-         <!-- </ul>
-        </nav> -->
-        <nav>  
-          <ul class="contact">
-            <li>
-              <span class="linkE"><a href="https://github.com/shaiwilson"  target="_blank">github</a></span><br>
-              <span class="linkE"><a href="https://www.linkedin.com/pub/shai-wilson/90/5b1/1bb"  target="_blank">linkedin</a></span><br>
-             <!-- <span class="linkE"><a href="#"  target="_blank">dribbble</a></span><br> -->
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    
     <main>
   <%= yield %>
 
     </main>
 </body>
+<footer id="footer">
+    <div class="footercontainer">
+      <div class="footercontact">
+        <p>CONTACT</p>
+      </div>
+      <div id="footerfloat">
+        <div class="footercontactfloat">
+          <p><a href="https://github.com/shaiwilson"  target="_blank">Github</a></p>
+        </div>
+        <div class="footercontactfloat footercontactfloatmargin">
+          <p><a class="redirect" href="mailto:sjwilson2@usfca.edu">sjwilson2@usfca.edu</a></p>
+        </div>
+        <div class="footercontactfloat footercontactfloatmargin">
+          <p><a href="https://www.linkedin.com/pub/shai-wilson/90/5b1/1bb"  target="_blank">Linkedin</a></p>
+        </div>
+      </div>
+      <div class="footercontact">
+        <h6>All works &copy; Shai Wilson <script>document.write(new Date().getFullYear())</script>
+      </div> 
+    </div>
+  </footer>
 </html>
