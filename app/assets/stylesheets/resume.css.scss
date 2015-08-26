@@ -27,7 +27,7 @@ $silver: #BDC3C7;
   width:750px;
   margin: 0 auto;
   padding-top:15px;
-  /*background: $silver; */
+  background: $silver; 
   text-align: left;
 }
 
@@ -40,11 +40,9 @@ $silver: #BDC3C7;
   color: #ffffff ;
   background-color: $amethyst;
   padding: 5px 6px 5px;
-
-  & a:hover {
+    & a:hover {
   background-color: $midnight-blue;
-
-  }
+    }
 	}
 }
 
